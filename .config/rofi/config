@@ -1,0 +1,26 @@
+rofi.modi:                           window,run,drun
+rofi.width:                          20
+rofi.lines:                          34
+rofi.columns:                        1
+rofi.padding:                        16
+rofi.font:                           Source Code Pro 11
+rofi.color-normal:                   #00000000, #eae9e9, #00000000, #F29919, #f6f3f3
+rofi.color-urgent:                   #DD2c2c2c, #b69e6d, #DD2c2c2c, #F29919, #b69e6d
+rofi.color-active:                   #00000000, #648ca7, #00000000, #F29919, #648ca7
+rofi.color-window:                   #0C0C16, #00000000, #ebedf8
+rofi.fullscreen: 		     false
+
+rofi.bw:                             0
+rofi.location:                       7
+
+rofi.separator-style:                none
+rofi.hide-scrollbar:                 true
+rofi.kb-row-up:                      Up,Alt+k
+rofi.kb-row-down:                    Down,Alt+j
+rofi.display-window:                 window
+rofi.display-run:                    exec
+rofi.display-drun:                   run
+rofi.eh:                             1
+rofi.line-margin:                    2
+rofi.line-padding:                   2
+rofi.opacity:			     100
