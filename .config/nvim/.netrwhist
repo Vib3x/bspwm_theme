@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
-let g:netrw_dirhist_3='/home/alex/Dropbox/uni/fprak/10-29_zeeman'
-let g:netrw_dirhist_2='/home/alex/Dropbox/uni/cs/ha/01'
-let g:netrw_dirhist_1='/home/alex/.config'
