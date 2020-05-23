@@ -1,0 +1,26 @@
+#Audiokeys
+XF86AudioMute
+        pactl set-sink-mute 0 toggle
+XF86Audio{Raise,Lower}Volume
+        amixer -D pulse sset Master 5%{+,-}
+XF86Audio{Next,Prev}
+        playerctl {next,previous}
+XF86AudioPlay
+        playerctl play-pause
+
+#other XF86 Keys
+XF86ScreenSaver
+        xscreensaver-command -lock
+
+#Launch Programs
+super + Return
+        $TERMINAL
+super + r
+        rofi -show drun -display-drun "open" -show-icons -no-fixed-num-lines -location 2 -yoffset 150
+super + shift + r
+        rofi -show run -no-fixed-num-lines -location 2 -yoffset 150
+
+#other stuff
+super + e
+        rofi -show unicode -modi 'unicode:~/.config/rofiemoji-rofiunicode/rofiunicode.sh' -no-fixed-num-lines -location 2 -yoffset 150
+

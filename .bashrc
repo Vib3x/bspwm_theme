@@ -9,7 +9,9 @@
 #use_color=true
 
 export TERM=xterm-256color
+export TERMINAL=alacritty
 export VISUAL=nvim
+export BROWSER=brave
 export EDITOR="$VISUAL"
 export PATH
 export HISTCONTROL=ignoreboth
@@ -26,5 +28,3 @@ alias more=less
 
 shopt -s autocd
 
-echo "The current date and time is:"
-date +"%a %d.%m.%Y - %H:%M"
