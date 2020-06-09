@@ -1,6 +1,8 @@
 " ------------------------------ plugins ---------------------------------
 call plug#begin('~/.vim/plugged')
     Plug 'morhetz/gruvbox'
+    Plug 'arcticicestudio/nord-vim'
+    Plug 'neoclide/coc.nvim', {'branch':'release'}
     Plug 'scrooloose/nerdcommenter'
     Plug 'scrooloose/nerdtree'
     "Plug 'ryanoasis/vim-devicons'
@@ -12,12 +14,13 @@ call plug#end()
 
 " ------------------------- general settings -----------------------------
 let mapleader=" "
-colorscheme gruvbox
+colorscheme nord
 filetype plugin on
 syntax on
 set encoding=utf-8
 set number relativenumber
 set incsearch
+set nohlsearch
 set ignorecase smartcase
 set ts=4 expandtab shiftwidth=4 smarttab
 set wildmode=longest,list,full
@@ -30,6 +33,7 @@ set cursorline
 set hidden
 set mouse=a
 set nobackup
+set clipboard+=unnamedplus
 
 " -------------------------- statusline ----------------------------------
 set statusline=
@@ -51,6 +55,16 @@ imap `U Ü
 imap `o ö
 imap `O Ö
 imap `s ß
+
+"--------------------------- hardmode ------------------------------------
+ noremap  <Up> ""
+ noremap! <Up> <Esc>
+ noremap  <Down> ""
+ noremap! <Down> <Esc>
+ noremap  <Left> ""
+ noremap! <Left> <Esc>
+ noremap  <Right> ""
+ noremap! <Right> <Esc>
 
 " -------------------------- compiler ------------------------------------
 let libs='gtk+-3.0 sdl2 SDL2_image'
@@ -80,8 +94,3 @@ let g:ycm_global_ycm_extra_conf = '~/.config/nvim/.ycm_extra_conf.py'
 
 " NERDTree
 let NERDTreeShowHidden=1
-
-" indentLine
-"let g:indentLine_faster = 1
-"let g:indentLine_setConceal = 1
-"let g:indentLine_char = '|'
