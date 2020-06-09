@@ -16,7 +16,7 @@ export EDITOR="$VISUAL"
 export PATH
 export HISTCONTROL=ignoreboth
 
-export PS1="\[$(tput bold)\]\[\033[38;5;9m\][\[$(tput bold)\]\[\033[38;5;10m\]\u\[$(tput bold)\]\[\033[38;5;11m\]@\[$(tput bold)\]\[\033[38;5;14m\]\h\[$(tput bold)\]\[\033[38;5;15m\] \[$(tput bold)\]\[\033[38;5;13m\]\w\[$(tput bold)\]\[\033[38;5;9m\]]\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\]\\$ \[$(tput sgr0)\]"
+export PS1="\[\033[38;5;6m\]\t\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;13m\]\W\[$(tput sgr0)\] \\$ \[$(tput sgr0)\]"
 
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes

@@ -1,30 +1,42 @@
-*background:        #282828
-*foreground:        #ebdbb2
-!black
-*color0:            #282828
-*color8:            #928374
-!red
-*color1:            #cc241d
-*color9:            #fb4934
-!green
-*color2:            #98971a
-*color10:           #b8bb26
-!yellow
-*color3:            #d79921
-*color11:           #fabd2f
-!blue
-*color4:            #458588
-*color12:           #83a598
-!magenta
-*color5:            #b16286
-*color13:           #d3869b
-!cyan
-*color6:            #689d6a
-*color14:           #8ec07c
-!white
-*color7:            #a89984
-*color15:           #ebdbb2
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
 
+*.foreground:   nord4
+*.background:   nord0
+*.cursorColor:  nord4
+*fading: 35
+*fadeColor: nord3
+
+*.color0: nord1
+*.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
 
 xscreensaver.splash:                        false
 xscreensaver.Dialog.headingFont:            -*-source sans pro-bold-r-*-*-18-*-*-*-*-*-*-*
@@ -34,17 +46,17 @@ xscreensaver.Dialog.unameFont:              -*-source sans pro-medium-r-*-*-14-*
 xscreensaver.Dialog.buttonFont:             -*-source sans pro-bold-r-*-*-18-*-*-*-*-*-*-*
 xscreensaver.Dialog.dateFont:               -*-source sans pro-medium-r-*-*-14-*-*-*-*-*-*-*
 xscreensaver.Dialog.passwdFont:             -*-source sans pro-bold-r-*-*-14-*-*-*-*-*-*-*
-xscreensaver.Dialog.foreground:             #ebdbb2
-xscreensaver.Dialog.background:             #282828
-xscreensaver.Dialog.Button.foreground:      #ebdbb2
+xscreensaver.Dialog.foreground:             nord4
+xscreensaver.Dialog.background:             nord0
+xscreensaver.Dialog.Button.foreground:      nord4
 xscreensaver.Dialog.Button.background:      #3c3836
-xscreensaver.Dialog.topShadowColor:         #282828
-xscreensaver.Dialog.bottomShadowColor:      #282828
-xscreensaver.Dialog.text.foreground:        #ebdbb2
+xscreensaver.Dialog.topShadowColor:         nord0
+xscreensaver.Dialog.bottomShadowColor:      nord0
+xscreensaver.Dialog.text.foreground:        nord4
 xscreensaver.Dialog.text.background:        #3c3836
 xscreensaver.Dialog.internalBorderWidth:    0
 xscreensaver.Dialog.shadowThickness:        2
 xscreensaver.Dialog.borderWidth:            0
-xscreensaver.passwd.thermometer.foreground: #458588
+xscreensaver.passwd.thermometer.foreground: nord9
 xscreensaver.passwd.thermometer.background: #3c3836
 xscreensaver.dateFormat:                    %H:%M | %d.%m.%Y
