@@ -1,6 +1,6 @@
-# dotfiles
+# my dotfiles
 
-## installed programs
+## configs for:
 
 *   bspwm
 *   polybar
@@ -12,11 +12,8 @@
 *   picom
 *   sxhkd
 *   zathura
-*   ipyhton
-*   mpd
-*   ncmpcpp
+*   mpd/ncmpcpp
 *   rofi
-
 
 ## fonts
 
@@ -25,3 +22,4 @@
 *   Font Awesome 5
 *   Noto Sans
 *   Material Icons
+
