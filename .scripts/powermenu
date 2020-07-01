@@ -1,0 +1,11 @@
+#!/bin/zsh
+# vim: filetype=sh
+
+sel=$(echo "🗘 \n⏻ " | rofi -dmenu -theme powermenu)
+
+if [ "$sel" = "🗘 " ]; then
+    reboot
+elif [ "$sel" = "⏻ " ]; then
+    shutdown now
+fi
+

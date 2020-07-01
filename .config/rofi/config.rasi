@@ -1,12 +1,18 @@
+//  ____        __ _ 
+// |  _ \ ___  / _(_)
+// | |_) / _ \| |_| |
+// |  _ < (_) |  _| |
+// |_| \_\___/|_| |_|
+
 * {
     font:                        "Source Sans Pro 18";
     columns:                     1;
     red:                         #cc241d;
     blue:                        #458588;
-    background:                  #282828;
-    foreground:                  #ebdbb2;
-    lightbg:                     #282828;
-    lightfg:                     #a89984;
+    background:                  #2E3440;
+    foreground:                  #D8DEE9;
+    lightbg:                     #2E3440;
+    lightfg:                     #687691;
     selected-active-background:  var(background);
     selected-active-foreground:  var(foreground);
     selected-normal-background:  var(lightbg);
@@ -34,6 +40,7 @@ window {
     padding:          5;
     background-color: var(background);
     border:           1;
+    width:            40%;
 }
 mainbox {
     padding: 0;

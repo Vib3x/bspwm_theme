@@ -1,3 +1,10 @@
+
+"  _ __   ___  _____   _(_)_ __ ___  
+" | '_ \ / _ \/ _ \ \ / / | '_ ` _ \ 
+" | | | |  __/ (_) \ V /| | | | | | |
+" |_| |_|\___|\___/ \_/ |_|_| |_| |_|
+"                                    
+ 
 " ------------------------------ plugins ---------------------------------
 call plug#begin('~/.vim/plugged')
     Plug 'morhetz/gruvbox'
@@ -28,7 +35,7 @@ set splitbelow splitright
 set cmdheight=2
 set updatetime=100
 set conceallevel=2
-set spell spelllang=en_us,de_de
+autocmd filetype tex set spell spelllang=en_us,de_de
 set cursorline
 set hidden
 set mouse=a
