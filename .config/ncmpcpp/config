@@ -5,7 +5,7 @@
 #                      |_|        |_|   |_|
 
 [mpd]
-mpd_music_dir = "~/music/"
+mpd_music_dir = "~/data/music/"
 mpd_host = "localhost"
 mpd_port = "6600"
 mpd_crossfade_time = "2"
