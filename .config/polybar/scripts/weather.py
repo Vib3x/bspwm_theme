@@ -2,9 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import requests
+from keys import CITY_ID, API_KEY
 
-CITY_ID = '6548737'
-API_KEY = '6006ea35f9f15f0f71a1d9bfdce70567'
 UNITS = 'Metric'
 
 REQ = requests.get("http://api.openweathermap.org/data/2.5/weather?id={}&appid={}&units={}".format(CITY_ID, API_KEY, UNITS))
