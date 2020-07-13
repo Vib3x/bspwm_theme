@@ -1,6 +1,5 @@
-
 autoload -U colors && colors
-#export PS1="\[\033[38;5;6m\]\t\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;13m\]\W\[$(tput sgr0)\] \\$ \[$(tput sgr0)\]"
+
 PS1="%B%{$fg[cyan]%}$(date +"%H:%M:%S") %{$fg[magenta]%}%~ %{$reset_color%}$%b "
 
 HISTFILE=~/.cache/zsh/history

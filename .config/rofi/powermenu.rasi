@@ -15,11 +15,11 @@ window {
     background-color:               @background;
     text-color:                     @foreground;
     border-radius:                  0px;
-    height:                         57px;
-    width:                          95px;
-    location:                       center;
-    x-offset:                       0;
-    y-offset:                       0px;
+    height:                         96px;
+    width:                          166px;
+    location:                       North;
+    x-offset:                       0px;
+    y-offset:                       36px;
 }
 
 prompt {
@@ -39,11 +39,10 @@ entry {
     background-color:               @background-alt;
     text-color:                     @foreground;
     placeholder-color:              @foreground;
-    /*padding:                        4px 8px 4px 8px;*/
     expand:                         true;
     horizontal-align:               0;
     placeholder:                    "Search";
-    blink:                          true;
+    /*blink:                          true;*/
 }
 
 case-indicator {
@@ -59,7 +58,7 @@ listview {
     spacing:                        1%;
     cycle:                          false;
     dynamic:                        true;
-    layout:                         horizontal;
+    layout:                         vertical;
 }
 
 mainbox {
@@ -72,7 +71,7 @@ mainbox {
 element {
     background-color:               @background-alt;
     text-color:                     @foreground;
-    orientation:                    horizontal;
+    orientation:                    vertical;
     border-radius:                  0px;
     padding:                        0px 0px 0px 0px;
 }
