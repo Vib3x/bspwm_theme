@@ -1,11 +1,11 @@
 #!/bin/zsh
 # vim: filetype=sh
 
-sel=$(echo "🗘 \n⏻ " | rofi -dmenu -theme powermenu)
+sel=$(echo "🗘 reboot\n⏻ shutdown" | rofi -dmenu -theme powermenu)
 
-if [ "$sel" = "🗘 " ]; then
+if [ "$sel" = "🗘 reboot" ]; then
     reboot
-elif [ "$sel" = "⏻ " ]; then
+elif [ "$sel" = "⏻ shutdown" ]; then
     shutdown now
 fi
 
