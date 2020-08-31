@@ -16,6 +16,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/goyo.vim'
     Plug 'Yggdroot/indentLine'
     Plug 'godlygeek/tabular'
+    Plug 'ap/vim-css-color'
     Plug 'plasticboy/vim-markdown'
 call plug#end()
 
@@ -101,3 +102,6 @@ let g:ycm_global_ycm_extra_conf = '~/.config/nvim/.ycm_extra_conf.py'
 
 " NERDTree
 let NERDTreeShowHidden=1
+
+" Markdown
+autocmd Filetype markdown normal zR

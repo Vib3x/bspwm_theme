@@ -40,9 +40,9 @@ font-4 = "Font Awesome 5 Brands:style=Regular:pixelsize=12;2"
 font-5 = "Noto Sans Symbols2:style=regular:pixelsize=12;4"
 
 modules-left = bspwm mpd
-modules-center = date weather
+modules-center = date
 modules-right = updates-pacman temperature cpu wlan vpn pulseaudio battery
-tray-position = none
+tray-position = right
 tray-padding = 2
 wm-restack = bspwm
 cursor-click = pointer

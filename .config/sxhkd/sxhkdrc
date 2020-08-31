@@ -10,9 +10,9 @@ XF86AudioMute
 XF86Audio{Raise,Lower}Volume
         amixer -D pulse sset Master 5%{+,-}
 XF86Audio{Next,Prev}
-        mpc {next, prev} #playerctl {next,previous}
+        playerctl {next,previous} #mpc {next, prev} 
 XF86AudioPlay
-        mpc toggle #playerctl play-pause
+        playerctl play-pause #mpc toggle 
 XF86ScreenSaver
         xset s activate
 XF86MonBrightnessUp

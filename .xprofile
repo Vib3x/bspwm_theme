@@ -1,0 +1,12 @@
+#!/bin/sh
+
+[ ! -s ~/.config/mpd/pid ] && mpd
+xss-lock -l -- xsecurelock &
+unclutter &
+nm-applet &
+dropbox &
+solaar --window=hide &
+
+xsetroot -cursor_name left_ptr
+
+[[ -f ~/.config/zsh/.zshenv ]] && source ~/.config/zsh/.zshenv
