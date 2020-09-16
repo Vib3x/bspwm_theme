@@ -9,7 +9,7 @@
 *   neovim
 *   zsh
 *   dunst
-*   picom
+*   picom (ibhagwan fork)
 *   sxhkd
 *   zathura
 *   mpd/ncmpcpp
@@ -22,4 +22,5 @@
 *   Font Awesome 5
 *   Noto Sans
 *   Material Icons
+*   Montsarat
 
