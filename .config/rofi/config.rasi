@@ -5,13 +5,13 @@
 // |_| \_\___/|_| |_|
 
 * {
-    font:                        "Source Sans Pro 18";
+    font:                        "Montserrat Medium 18";
     columns:                     1;
     red:                         #cc241d;
     blue:                        #458588;
     background:                  #2E3440;
     foreground:                  #D8DEE9;
-    lightbg:                     #2E3440;
+    lightbg:                     #4c566a;
     lightfg:                     #687691;
     selected-active-background:  var(background);
     selected-active-foreground:  var(foreground);
@@ -21,25 +21,25 @@
     selected-urgent-foreground:  var(foreground);
     alternate-active-background: var(background);
     alternate-active-foreground: var(lightfg);
-    alternate-normal-background: var(lightbg);
+    alternate-normal-background: var(background);
     alternate-normal-foreground: var(lightfg);
     alternate-urgent-background: var(red);
     alternate-urgent-foreground: var(lightfg);
     active-background:           var(background);
     active-foreground:           var(lightfg);
-    normal-background:           var(lightbg);
+    normal-background:           var(background);
     normal-foreground:           var(lightfg);
     urgent-background:           var(red);
     urgent-foreground:           var(lightfg);
-    separatorcolor:              var(lightbg);
+    separatorcolor:              var(background);
     spacing:                     0;
     border-color:                var(background);
     background-color:            rgba ( 255, 255, 155, 0 % );
 }
 window {
-    padding:          5;
+    padding:          8 8 8 8;
     background-color: var(background);
-    border:           1;
+    border:           0;
     width:            40%;
 }
 mainbox {
@@ -47,24 +47,25 @@ mainbox {
     border:  0;
 }
 message {
-    padding:      1px ;
+    padding:      0;
     border-color: var(separatorcolor);
-    border:       2px dash 0px 0px ;
+    border:       0;
 }
 textbox {
     text-color: var(foreground);
 }
 listview {
-    padding:      4px 0px 0px ;
+    padding:      8 0 0 0;
     scrollbar:    true;
     border-color: var(separatorcolor);
-    spacing:      0px ;
+    spacing:      0 0 0 8;
     fixed-height: 0;
-    border:       2px dash 0px 0px ;
+    border:       0;
 }
 element {
-    padding: 1px ;
+    padding: 4;
     border:  0;
+    border-radius: 10;
 }
 element normal.normal {
     background-color: var(normal-background);
@@ -103,15 +104,12 @@ element alternate.active {
     text-color:       var(alternate-active-foreground);
 }
 scrollbar {
-    width:        0px ;
+    width:        8;
     padding:      0;
-    handle-width: 0px ;
+    handle-width: 8;
     border:       0;
-    handle-color: var(normal-foreground);
-}
-mode-switcher {
-    border-color: var(separatorcolor);
-    border:       2px dash 0px 0px ;
+    border-radius: 4;
+    handle-color: var(lightbg);
 }
 button {
     spacing:    0;
@@ -122,31 +120,31 @@ button selected {
     text-color:       var(selected-normal-foreground);
 }
 inputbar {
-    padding:    1px ;
-    spacing:    0px ;
-    text-color: var(normal-foreground);
-    background-color: var(lightbg);
-    children:   [ prompt,textbox-prompt-colon,entry,overlay,case-indicator ];
-}
-case-indicator {
+    padding:    0;
     spacing:    0;
     text-color: var(normal-foreground);
+    background-color: var(background);
+    children:   [ prompt,textbox-prompt-colon,entry];
 }
 entry {
     spacing:    0;
+    padding:    8;
+    border-radius: 10;
     text-color: var(foreground);
+    background-color: var(lightbg);
 }
 prompt {
     spacing:    0;
+    padding:    12 8 0 8;
     text-color: var(normal-foreground);
 }
 textbox-prompt-colon {
-    margin:     0px 0.3000em 0.0000em 0.0000em ;
+    margin:     8 8 0 0;
     expand:     false;
     str:        ":";
     text-color: inherit;
 }
 error-message {
     background-color: rgba ( 0, 0, 0, 0 % );
-    text-color:       var(normal-foreground);
+    text-coloj:       var(normal-foreground);
 }

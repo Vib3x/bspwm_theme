@@ -15,6 +15,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/mybar]
+monitor=HDMI-A-0
 width = 100%
 height = 27
 ;offset-x = 1%
@@ -32,16 +33,16 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = Source Sans Pro:size=12;2
-font-1 = MaterialIcons:size=10;2
+font-0 = Montserrat Medium:size=12;4
+font-1 = Material Design Icons:style=Regular:size=10;2
 font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=12;2"
 font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=12;2"
 font-4 = "Font Awesome 5 Brands:style=Regular:pixelsize=12;2"
-font-5 = "Noto Sans Symbols2:style=regular:pixelsize=12;4"
+font-5 = "Noto Sans Symbols2:style=Regular:pixelsize=12;4"
 
-modules-left = bspwm mpd
+modules-left = bspwm
 modules-center = date
-modules-right = updates-pacman temperature cpu wlan vpn pulseaudio battery
+modules-right = updates-pacman temperature cpu pulseaudio
 tray-position = right
 tray-padding = 2
 wm-restack = bspwm
@@ -98,22 +99,27 @@ label-unmounted-foreground = ${colors.foreground-alt}
 [module/bspwm]
 type = internal/bspwm
 
+
 label-focused = "●"
 
 label-focused-background = ${colors.background}
 label-focused-padding = 2
+label-focused-font = 6
 
 label-occupied = "●"
 label-occupied-foreground = ${colors.foreground-alt}
 label-occupied-padding = 2
+label-occupied-font = 6
 
 label-urgent = %index%!
 label-urgent-foreground = ${colors.alert}
 label-urgent-padding = 2
+label-urgent-font = 6
 
 label-empty = "○"
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
+label-empty-font = 6
 
 [module/mpd]
 type = internal/mpd

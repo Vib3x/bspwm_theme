@@ -14,7 +14,7 @@ XF86Audio{Next,Prev}
 XF86AudioPlay
         playerctl play-pause #mpc toggle 
 XF86ScreenSaver
-        xset s activate
+        light-locker-command -l
 XF86MonBrightnessUp
         brightnessctl -q s +5%
 XF86MonBrightnessDown
@@ -30,7 +30,7 @@ super + s
 super + shift + Escape
         powermenu
 super + r
-        rofi -show drun -display-drun "open" -show-icons -no-fixed-num-lines -location 2 -yoffset 150
+        rofi -show drun -display-drun "" -show-icons -no-fixed-num-lines -location 2 -yoffset 150
 super + shift + r
         rofi -show run -no-fixed-num-lines -location 2 -yoffset 150
 
@@ -47,3 +47,7 @@ super + shift + c
         bspc wm -r & xrdb -merge -I$HOME ~/.Xresources
 super + {_,shift + }{h,j,k,l}
 	    bspc node -{f,s} {west,south,north,east}
+
+#notification-center
+super + n
+        kill -s USR1 $(pidof deadd-notification-center)

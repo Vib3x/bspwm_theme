@@ -1,6 +1,7 @@
 autoload -U colors && colors
 
-PS1="%B%{$fg[cyan]%}$(date +"%H:%M:%S") %{$fg[magenta]%}%~ %{$reset_color%}$%b "
+#PS1="%B %{$fg[magenta]%}%~ %{$reset_color%}$%b "
+PROMPT="%F{cyan}%*%f %F{magenta}%~%f $ "
 
 HISTFILE=~/.cache/zsh/history
 HISTSIZE=10000
@@ -29,4 +30,4 @@ alias grep='grep --color=auto'
 alias ll='ls -alh --color=auto'
 alias ipy='ipython'
 
-source ~/.config/zsh/plugins/fast-syntax-highlighting.plugin.zsh
+source ~/.config/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh

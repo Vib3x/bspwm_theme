@@ -1,18 +1,18 @@
 #! /bin/sh
 
-mainmonitor="$(bspc query --monitors --names | grep -v LVDS)"
+#mainmonitor="$(bspc query --monitors --names | grep -v LVDS)"
 
-if ! [ -z "$mainmonitor" ]; then
-    xrandr --output "$mainmonitor" --auto --output LVDS-1 --off
-else
-    mainmonitor="LVDS-1"
-fi
+#if ! [ -z "$mainmonitor" ]; then
+    #xrandr --output "$mainmonitor" --auto --output LVDS-1 --off
+#else
+    #mainmonitor="LVDS-1"
+#fi
 
-bspc monitor "$mainmonitor" -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor "HDMI-A-0" -d 1 2 3 4 5 6 7 8 9 10
 #bspc desktop -f 1
 
 bspc config border_width         0
-bspc config window_gap           0
+bspc config window_gap           4
 
 bspc config split_ratio          0.52
 bspc config single_monocle       true
@@ -23,25 +23,16 @@ bspc config gapless_monocle      true
 ## startup ##
 #############
 
-xrdb -load ~/.Xresources &
+#xrdb -load ~/.Xresources &
 
 pkill sxhkd
 sxhkd &
 
-pkill picom
-picom -b &
-
-pkill dunst
-dunst &
-
-pkill redshift
-redshift &
-
-pidof bspswallow || bspswallow &
-
-feh --bg-center $HOME/pictures/wallpaper/fuji.jpg
+feh --bg-center $HOME/pictures/wallpaper/forest.jpg
 
 panel #polybar script
+
+notifi #notification-center
 
 ###########
 ## rules ##
@@ -49,19 +40,12 @@ panel #polybar script
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop=2
+bspc rule -a Thunar state=floating
+bspc rule -a Steam state=floating
+bspc rule -a Fightcade state=floating
+bspc rule -a fcadefbneo.exe state=floating
 bspc rule -a Brave-browser desktop=2
-bspc rule -a spotify desktop=3
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Zathura state=tiled
 bspc rule -a "Picture in picture" state=floating
-
-#bspc subscribe node_state | while read -r _ _ _ node state status; do
-    #if [[ "$state" == "floating" ]]; then
-        #case "$status" in
-            #off) xprop -id "$node" -remove _COMPTON_SHADOW;;
-            #on) xprop -id "$node" -f _COMPTON_SHADOW 32c -set _COMPTON_SHADOW 1;;
-        #esac
-    #fi
-#done
-
